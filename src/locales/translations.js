@@ -265,7 +265,8 @@ const translations = {
       p50Title: "Медиана (50-й перцентиль)",
       p50Content: "Самый вероятный усредненный сценарий. Половина симуляций оказалась лучше, половина — хуже.",
       p90Title: "Оптимистичный (90-й перцентиль)",
-      p90Content: "Вам повезло, рынки росли лучше ожиданий. Только в 10% случаев результат будет еще выше."
+      p90Content: "Вам повезло, рынки росли лучше ожиданий. Только в 10% случаев результат будет еще выше.",
+      warningText: "⚠️ Важное допущение: Симуляция использует логнормальное распределение (геометрическое броуновское движение). Она не учитывает рыночные шоки (\"черных лебедей\"), налоги, комиссии и смену налогового резидентства. Результаты являются вероятностными и не гарантируют будущую доходность."
     },
     goal: {
       title: "Цель: Трекер накоплений",
@@ -552,7 +553,8 @@ const translations = {
       p50Title: "Median (50th Percentile)",
       p50Content: "The most likely average scenario. Half of the simulations were better, half were worse.",
       p90Title: "Optimistic (90th Percentile)",
-      p90Content: "You got lucky, markets grew better than expected. Only in 10% of cases the result will be even higher."
+      p90Content: "You got lucky, markets grew better than expected. Only in 10% of cases the result will be even higher.",
+      warningText: "⚠️ Important assumption: The simulation uses a log-normal distribution (geometric Brownian motion). It does not account for market shocks (\"black swans\"), taxes, fees, and changes in tax residency. Results are probabilistic and do not guarantee future returns."
     },
     goal: {
       title: "Goal: Savings Tracker",
