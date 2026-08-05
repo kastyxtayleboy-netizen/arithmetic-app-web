@@ -84,7 +84,7 @@ const Sidebar = ({ activeTab, setActiveTab, onOpenFeedback }) => {
           <span className="link-text">{t('feedback.btn')}</span>
         </button>
         <a
-          href="#"
+          href="https://youtube.com/channel/UCYF93yEBV4m8eod9Vr7qaig?si=GCl44Bt6UgwfA7uD"
           target="_blank"
           rel="noopener noreferrer"
           className="sidebar-link youtube-btn"
