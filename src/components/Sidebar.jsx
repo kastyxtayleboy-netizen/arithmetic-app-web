@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart2, PiggyBank, Flame, Scale, History, Home, Target, MessageSquare, Heart, Globe, Dices, Trophy, PlaySquare } from 'lucide-react';
+import { BarChart2, PiggyBank, Flame, Scale, History, Home, Target, MessageSquare, Heart, Globe, Dices, Trophy } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Sidebar = ({ activeTab, setActiveTab, onOpenFeedback }) => {
@@ -83,16 +83,6 @@ const Sidebar = ({ activeTab, setActiveTab, onOpenFeedback }) => {
           <span className="link-icon"><MessageSquare size={22} /></span>
           <span className="link-text">{t('feedback.btn')}</span>
         </button>
-        <a
-          href="https://youtube.com/channel/UCYF93yEBV4m8eod9Vr7qaig?si=GCl44Bt6UgwfA7uD"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="sidebar-link youtube-btn"
-          style={{ textDecoration: 'none', color: 'inherit' }}
-        >
-          <span className="link-icon"><PlaySquare size={22} color="#EF4444" /></span>
-          <span className="link-text">YouTube</span>
-        </a>
         <a
           href="https://boosty.to/arifmetikaofmoney"
           target="_blank"
