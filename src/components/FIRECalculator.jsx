@@ -84,8 +84,8 @@ const FIRECalculator = () => {
             value={monthlyExpenses} 
             onChange={(e) => setMonthlyExpenses(e.target.value === '' ? '' : Number(e.target.value))} 
           />
-          <div className="checkbox-wrapper" style={{ marginTop: '10px' }}>
-            <label className="checkbox-label">
+          <div className="checkbox-wrapper" style={{ marginTop: '10px', display: 'flex', alignItems: 'center' }}>
+            <label className="checkbox-label" style={{ margin: 0 }}>
               <input 
                 type="checkbox" 
                 checked={useTax} 
@@ -95,7 +95,7 @@ const FIRECalculator = () => {
               {t('fire.useTax')}
             </label>
             <Tooltip title={t('fire.useTax')} content={t('fire.useTaxTooltip')} hideIcon={true}>
-              <span className="info-icon" style={{ marginLeft: '5px' }}>?</span>
+              <span className="info-icon" style={{ marginLeft: '8px', marginTop: '0' }}>?</span>
             </Tooltip>
           </div>
         </div>
