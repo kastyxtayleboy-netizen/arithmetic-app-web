@@ -94,7 +94,7 @@ const FIRECalculator = () => {
               <span className="checkbox-custom"></span>
               {t('fire.useTax')}
             </label>
-            <Tooltip title={t('fire.useTax')} content={t('fire.useTaxTooltip')}>
+            <Tooltip title={t('fire.useTax')} content={t('fire.useTaxTooltip')} hideIcon={true}>
               <span className="info-icon" style={{ marginLeft: '5px' }}>?</span>
             </Tooltip>
           </div>
