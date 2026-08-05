@@ -4,7 +4,7 @@ import Tooltip from './Tooltip';
 import AnimatedNumber from './AnimatedNumber';
 import Slider from './Slider';
 import ReceiptModal from './ReceiptModal';
-import { Share2, PlaySquare } from 'lucide-react';
+import { Share2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './Calculator.css';
 
@@ -162,41 +162,6 @@ const Calculator = () => {
           </div>
           <Slider min={1} max={50} value={years} onChange={setYears} />
         </div>
-
-        <a
-          href="https://youtube.com/channel/UCYF93yEBV4m8eod9Vr7qaig?si=GCl44Bt6UgwfA7uD"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '8px',
-            marginTop: '32px',
-            padding: '12px 24px',
-            background: 'rgba(239, 68, 68, 0.1)',
-            border: '1px solid rgba(239, 68, 68, 0.3)',
-            borderRadius: '8px',
-            color: '#EF4444',
-            textDecoration: 'none',
-            fontWeight: '600',
-            transition: 'all 0.2s ease',
-            cursor: 'pointer'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(239, 68, 68, 0.2)';
-            e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)';
-            e.currentTarget.style.transform = 'translateY(-2px)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)';
-            e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.3)';
-            e.currentTarget.style.transform = 'translateY(0)';
-          }}
-        >
-          <PlaySquare size={22} />
-          <span>Мой YouTube</span>
-        </a>
       </div>
 
       <div className="results-panel glass">

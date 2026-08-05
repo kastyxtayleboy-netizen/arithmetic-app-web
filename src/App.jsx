@@ -10,6 +10,7 @@ import MonteCarlo from './components/MonteCarlo';
 import GoalTracker from './components/GoalTracker';
 import FeedbackModal from './components/FeedbackModal';
 import { useLanguage } from './contexts/LanguageContext';
+import { PlaySquare } from 'lucide-react';
 import './index.css';
 import './App.css';
 
@@ -46,6 +47,16 @@ function App() {
       />
 
       <div className="main-wrapper">
+        <a
+          href="https://youtube.com/channel/UCYF93yEBV4m8eod9Vr7qaig?si=GCl44Bt6UgwfA7uD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="youtube-top-btn"
+        >
+          <PlaySquare size={20} />
+          <span>Мой YouTube</span>
+        </a>
+
         <main className="main-content fade-in">
           {renderContent()}
         </main>
