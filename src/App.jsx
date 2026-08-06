@@ -10,14 +10,14 @@ import MonteCarlo from './components/MonteCarlo';
 import GoalTracker from './components/GoalTracker';
 import FeedbackModal from './components/FeedbackModal';
 import { useLanguage } from './contexts/LanguageContext';
-import { PlaySquare } from 'lucide-react';
+import { PlaySquare, MessageSquare, Heart, Globe, BarChart2 } from 'lucide-react';
 import './index.css';
 import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('compound');
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, language, toggleLanguage } = useLanguage();
 
   const renderContent = () => {
     switch (activeTab) {
@@ -45,6 +45,30 @@ function App() {
         setActiveTab={setActiveTab}
         onOpenFeedback={() => setIsFeedbackOpen(true)}
       />
+
+      <header className="mobile-header">
+        <div className="mobile-logo">
+          <BarChart2 size={24} className="mobile-logo-icon" />
+          <span className="mobile-logo-text">{t('app.title')}</span>
+        </div>
+        <div className="mobile-utils">
+          <button className="mobile-util-btn" onClick={() => setIsFeedbackOpen(true)}>
+            <MessageSquare size={20} />
+          </button>
+          <a
+            href="https://boosty.to/arifmetikaofmoney"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-util-btn"
+          >
+            <Heart size={20} />
+          </a>
+          <button className="mobile-util-btn lang-btn" onClick={toggleLanguage}>
+            <Globe size={20} />
+            <span>{language.toUpperCase()}</span>
+          </button>
+        </div>
+      </header>
 
       <div className="main-wrapper">
         <a

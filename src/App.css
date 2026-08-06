@@ -382,6 +382,10 @@
   opacity: 1;
 }
 
+.mobile-header {
+  display: none;
+}
+
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
   .app-layout {
@@ -475,9 +479,62 @@
     margin-bottom: 6px;
   }
 
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    padding: 0 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-color);
+    font-weight: 700;
+  }
+
+  .mobile-utils {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mobile-util-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .mobile-util-btn.lang-btn {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .mobile-util-btn.lang-btn span {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
   .main-wrapper {
     margin-left: 0;
-    padding: 15px 15px 100px 15px; /* bottom padding for bottom nav */
+    padding: 80px 15px 100px 15px; /* top padding for top header, bottom padding for bottom nav */
   }
   
   .youtube-top-btn {
