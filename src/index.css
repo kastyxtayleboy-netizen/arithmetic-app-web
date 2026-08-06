@@ -351,3 +351,33 @@ input[type="range"]::-webkit-slider-thumb:hover {
   font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.4);
 }
+
+/* Mobile Optimizations & Performance */
+@media (max-width: 768px) {
+  .bg-orbs {
+    display: none !important;
+  }
+  
+  .glass {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(22, 27, 34, 0.95) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+  }
+}
+
+/* Fix sticky hover on touch devices */
+@media (hover: none) {
+  .btn-primary:hover {
+    background: var(--accent-gradient);
+    transform: none;
+    box-shadow: var(--shadow-glow);
+  }
+  .btn-primary::after {
+    display: none;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover {
+    transform: none;
+    box-shadow: var(--shadow-glow);
+  }
+}

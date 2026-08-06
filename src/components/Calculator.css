@@ -248,3 +248,27 @@
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
+
+/* Fix sticky hover on touch devices */
+@media (hover: none) {
+  .result-card:hover {
+    border-color: var(--border-color);
+    background: rgba(0, 0, 0, 0.3);
+    transform: none;
+    box-shadow: none;
+  }
+  .interactive-slider::-webkit-slider-thumb:hover {
+    transform: none;
+  }
+  .interactive-slider::-moz-range-thumb:hover {
+    transform: none;
+  }
+  .preset-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+  }
+  .preset-btn.active:hover {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-color);
+  }
+}
