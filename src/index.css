@@ -33,6 +33,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -44,6 +45,11 @@ body {
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
+}
+
+button, a {
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #root {
@@ -101,6 +107,16 @@ input[type="number"], input[type="text"] {
   font-size: 1.1rem;
   transition: var(--transition);
   outline: none;
+}
+
+/* Hide spin buttons for number inputs */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input[type="number"]:focus, input[type="text"]:focus {
