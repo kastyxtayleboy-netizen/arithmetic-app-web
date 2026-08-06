@@ -10,6 +10,20 @@
 @media (max-width: 860px) {
   .calculator-wrapper {
     grid-template-columns: 1fr;
+    padding: 10px 5px;
+    gap: 20px;
+  }
+  
+  .calculator-panel, .results-panel {
+    padding: 20px 15px;
+  }
+  
+  .calc-title {
+    font-size: 1.6rem;
+  }
+  
+  .primary-result .result-value {
+    font-size: 2rem;
   }
 }
 

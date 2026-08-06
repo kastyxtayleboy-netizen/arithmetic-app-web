@@ -100,7 +100,7 @@ const KellyCriterion = () => {
               <label>{t('kelly.fraction')}</label>
             </Tooltip>
           </div>
-          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '10px' }}>
             <button 
               className={`tab-btn ${fraction === 1.0 ? 'active' : ''}`}
               onClick={() => setFraction(1.0)}

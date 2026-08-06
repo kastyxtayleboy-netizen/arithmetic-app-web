@@ -128,7 +128,7 @@ const HistoricalSimulator = () => {
         
         <div className="input-group">
           <label>{t('hist.market')}</label>
-          <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '10px' }}>
             <button 
               className={`tab-btn ${market === 'moex' ? 'active' : ''}`}
               onClick={() => setMarket('moex')}
